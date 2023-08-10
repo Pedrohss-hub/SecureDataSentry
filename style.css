@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'inter';
+}
+
+.header {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 8vh;
+    display: flex; /**/
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box1-header {
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    height: 100%;
+
+}
+
+.box2-header {
+    width: auto;
+    height: 100%;
+    display: flex; /**/
+    align-items: center;
+}
+
+.box2-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box2-btn {
+    height: 70%;
+    width: 90%;
+    background-color: lightgreen;
+    border: none;
+    border-radius: 10px;
+}
+
+.carrossel {
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(233, 236, 232);
+}
+
+.text-cases {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-cases h2 {
+    max-width: 30%;
+    text-align: center;
+}
+
+.analitycs-case {
+    margin-top: 3%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.analitycs-case span {
+    width: 20%;
+    padding: 20px;
+    box-shadow: 0px 1px 2px -1px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.section-password {
+    margin-top: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.section-password div {
+    /*max-width: 50%;*/
+    display: flex;
+    flex-direction: column;
+}
+
+.section-password p {
+    font-size: 10px;
+}
+
+.section-password button {
+    width: 120px;
+    font-size: 0.9rem;
+    padding: 10px;
+    border: none;
+    background-color: #4CAF4F;
+    color: white;
+}
