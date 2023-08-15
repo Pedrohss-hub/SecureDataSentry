@@ -1,8 +1,7 @@
-const header = document.querySelector('.header');
+const header = document.querySelector('.header')
+const carrossel = document.querySelector('.space-pag')
 let baseScrol = window.scrollY
 let headerHeight = -(header.offsetHeight)
-console.log(headerHeight)
-header.style.top = headerHeight + 'px'
 
 /* INTERATIVIDADE DO HEADER*/
 document.addEventListener("scroll", () => {
@@ -17,7 +16,6 @@ document.addEventListener("scroll", () => {
         header.classList.remove('headerDown')
         header.classList.add('headerUp')
         header.addEventListener('animationend', headerUp)
-
     }
 
 
@@ -25,13 +23,13 @@ document.addEventListener("scroll", () => {
         header.classList.remove('headerUp')
         header.classList.add('headerDown')
         header.style.top = '0px'
-        console.log('teste')
     }
-    console.log(realScroll)
     baseScrol = varScroll;
 })
 
-/*
-    animation: headerUp 0.4s ease-in-out 0s infinite forwards;
- */
-/* AJUSTE DO CARROSEL*/
+const spacePag = () => {
+    carrossel.style.marginTop = Math.abs(headerHeight) +'px'
+    console.log(carrossel.marginTop)
+}
+
+spacePag()

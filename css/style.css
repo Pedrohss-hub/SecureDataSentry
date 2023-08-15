@@ -6,6 +6,19 @@
     font-family: 'inter';
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -15,7 +28,7 @@ a {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 12vh;
+    height: 10vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,7 +39,7 @@ a {
     margin-left: 5%;
     width: 33%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     height: 100%;
 }
@@ -46,7 +59,7 @@ a {
     width: 42%;
     height: 100%;
     display: flex;
-    justify-content: space-between; 
+    justify-content: flex-end; 
     align-items: center;
 }
 
@@ -54,7 +67,8 @@ a {
     padding: 0;
     display: flex;
     justify-content: space-between;
-    width: 160px;
+    width: 170px;
+    margin-right: 20px;
 }
 
 .list-text {
@@ -80,8 +94,12 @@ a {
 
 .carrossel {
     width: 100%;
-    height: 40vh;
-    background-color: rgb(233, 236, 232);
+    height: auto;
+}
+
+.img-car {
+    width: 100%;
+    object-fit: cover;
 }
 
 .text-cases {
@@ -97,17 +115,6 @@ a {
     color: #4D4D4D;
 }
 
-.text-case {
-    margin-top: 10px;
-    color: #717171;
-}
-.text-case-title {
-    max-width: 40%;
-    text-align: center;
-    font-weight: 600;
-    color: #4D4D4D;
-}
-
 .analitycs-case {
     margin-top: 3%;
     width: 100%;
@@ -116,12 +123,38 @@ a {
 }
 
 .analitycs-case-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 22%;
     padding: 20px;
+    padding-top: 10px;
     box-shadow: 0px 1px 2px -1px;
     border-radius: 6px;
     text-align: center;
     font-size: 14px;
+}
+
+.img-div {
+    width: auto;
+    height: 10%;
+}
+
+.img-analitycs {
+    width: 28%;
+    object-fit: cover;
+}
+
+.text-case-title {
+    max-width: 40%;
+    text-align: center;
+    font-weight: 600;
+    color: #4D4D4D;
+}
+
+.text-case {
+    margin-top: 10px;
+    color: #717171;
 }
 
 .section-password {
@@ -132,12 +165,15 @@ a {
 }
 
 .img-password {
-    object-fit: cover;
     width: 40%;
+    object-fit: cover;
 }
 
 .span-text-password {
     width: 60%;
+    padding: 5%;
+    padding-left: 0px;
+    padding-right: 0px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -163,9 +199,10 @@ a {
     background-color: #4CAF4F;
     border: none;
     border-radius: 3px;
+    cursor: pointer;
 }
 
-/* ANIMAÇÔES*/
+/* ANIMAÇÕES*/
 @keyframes headerUp {
     0% {
         transform: translateY(0);
@@ -192,16 +229,361 @@ a {
 .headerDown {
     animation: headerDown 0.3s ease;
 }
+/*Souza*/
+
+/*Gustavo*/
+.box-cinza {
+    width: 100%;
+    height: 10rem;
+    flex-direction: column;
+    display: flex;
+    background: var(--neutral-silver, #F5F7FA);
+    align-items: center;
+    justify-content: center;
+    font-size: auto;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    padding-left: 14%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    background: var(--neutral-black, #263238);
+    color: #FFFFFF;
+    font-family: 'Literata', serif;
+}
+
+.copyright {
+    color: #F5F7FA;
+    font-family: 'Inter', sans-serif;
+    padding-bottom: 3%;
+    font-size: auto;
+}
+
+.instagram {
+    width: 25px;
+    padding-right: 10%;
+}
+
+.twitter {
+    width: 25px;
+    padding-right: 8%;
+}
+
+.youtube {
+    width: 25px;
+    padding-right: 8%;
+}
+
+.div_icons {
+    padding: 8%;
+    justify-content: center;
+    align-items: right;
+    display: flex;
+}
+
+.company {
+    justify-content: center;
+    align-items: center;
+    padding-left: 15%;
+
+
+}
+
+.company h2 {
+    padding-bottom: auto;
+}
+
+.letter-company {
+    font-family: 'Inter', sans-serif;
+    color: #F5F7FA;
+    padding-bottom: auto;
+}
+
+.support {
+    justify-content: center;
+    align-items: center;
+    padding-left: 15%
+}
+
+.support h2 {
+    padding-bottom: auto;
+}
+
+.letter-support {
+    font-family: 'Inter', sans-serif;
+    color: #F5F7FA;
+    padding-bottom: 7.5%;
+}
+
+.stay-up{
+    padding-left: 5%;
+}
+
+.stay-up button {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-gray-300, #D9DBE1);
+    background-color: #626b70;
+    width: 100px;
+    height: auto;
+    border-radius: 5.569px;
+}
+
+.letter-button {
+    align-items: right;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.container-digital {
+
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    margin-bottom: 17%;
+}
+
+.digital1 {
+    margin-left: 30px;
+    width: 30%;
+    height: auto;
+    position: relative;
+    display: flex;
+}
+
+.discord_img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.discord-text {
+    text-align:center;
+    justify-content:space-between;
+    margin-top: 65%;
+    margin-left: 15% ;
+    width: 70%;
+    height: 60%;
+    position: absolute;
+    background: var(--neutral-silver, #F5F7FA);
+    border-radius: 5.569px;
+    font-family: 'Inter', sans-serif;
+    font-size:  5%;
+}
+
+.letter-digital1 {
+    padding: 5px;
+    font-size: 15px;
+    color: var(--neutral-grey, #717171);
+}
+
+.digital2 {
+    padding-bottom: 5%;
+    margin-left: 20px;
+    width: 30%;
+    height: auto;
+    position: relative;
+    display: flex;
+
+}
+
+.serasa_img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    border-radius: 10px;
+    max-width: 100%;
+
+}
+
+.serasa_text {
+    text-align:center;
+    justify-content:space-between;
+    margin-top: 65%;
+    margin-left: 15% ;
+    width: 70%;
+    height: 60%;
+    position: absolute;
+    background: var(--neutral-silver, #F5F7FA);
+    border-radius: 5.569px;
+    font-family: 'Inter', sans-serif;
+    font-size:  5%;
+}
+
+
+
+.digital3 {
+    padding-bottom: 5%;
+    margin-left: 20px;
+    width: 30%;
+    height: auto;
+    position: relative;
+    display: flex;
+}
+
+.previdencia-img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    border-radius: 10px;
+    max-width: 100%;
+
+}
+
+.previdencia-text {
+    text-align:center;
+    justify-content:space-between;
+    margin-top: 65%;
+    margin-left: 15% ;
+    width: 70%;
+    height: 60%;
+    position: absolute;
+    background: var(--neutral-silver, #F5F7FA);
+    border-radius: 5.569px;
+    font-family: 'Inter', sans-serif;
+    font-size:  5%;
+
+}
+
+
+/*Fim Gustavo*/
+
+/*Victor*/
+.box-ciberbullying{
+    background: var(--neutral-silver, #F5F7FA);
+    width: auto;
+    height: auto;
+    display: flex;
+}
+
+.ciberbullying{
+    background: var(--neutral-silver, #F5F7FA);
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.letter{
+    font-size: auto;
+    padding-top: 10%;
+    padding-left: 75px;
+    color: var(--neutral-d-grey, #4D4D4D);
+    justify-content: baseline;
+}
+
+.letter1{
+    color: var(--brand-primary, #4CAF4F);
+    font-size: auto;
+    display: flex;
+    align-items: center;
+    padding-left: 75px;
+    font-weight: 700;
+    
+}
+
+.letter2{
+    padding-left: 75px;
+    padding-bottom: 2%;
+    color: var(--text-gray-900, #18191F);
+}
+
+
+
+.box-img{
+    padding-left: 20%;
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.box-img-cont{
+    display: flex;
+    position: relative;
+    padding-top: 5%;
+    width: auto;
+    padding-bottom: 2%;
+}
+
+.img-text{
+    position: absolute;
+    top: 5%;
+    left: 60px;
+    color: white;
+    width: auto;
+    color: var(--neutral-d-grey, #4D4D4D);
+    font-weight: 700;
+    font-size: 120%;
+
+    
+}
+
+.img-text2{
+    position: relative;
+    top: 25%;
+    left: 3%;
+    color: white;
+    width: 70%;
+    box-sizing: border-box;
+    color: var(--neutral-grey, #717171);
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.section-password2 {
+    margin-top: 5%;
+    display: flex;
+}
+
+.img-password2 {
+    width: 25%;
+    padding: 30px;
+    object-fit: cover;
+}
+
+.span-text-password2 {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+
+}
+
+.title-password2 {
+    font-size: 1.2rem;
+}
+
+.text-password2 {
+    font-size: 0.8rem;
+}
+
+.btn-password2 {
+    padding: 10px;
+    width: 110px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: white;
+    background-color: #4CAF4F;
+    border: none;
+    border-radius: 3px;
+}
+/*Fim Victor*/
 
 /* RESPONSIVIDADE */
 
-@media (min-width: 768px) {
-    
+@media (min-width: 900px) {
+    .text-password {
+        font-size: 16px;
+    }
 }
 
 @media (min-width: 1000px) {
     .header {
-        height: 12vh;
+        height: 10vh;
     }
 
     .logotipo {
@@ -214,7 +596,11 @@ a {
 
     .box2-btn {
         width: 160px;
-        font-size: 21px;
+        font-size: 18px;
+    }
+
+    .analitycs-case-box {
+        font-size: 16px;
     }
 
     .title-password {
@@ -236,35 +622,616 @@ a {
         border-radius: 3px;
         cursor: pointer;
     }
+    /*Souza*/
 
+    /*Gustavo*/
+    .letter-digital1{
+        font-size: 18px ;
+    }
+    .footer{
+        width: auto;
+        padding-left: 5%;
+    }
+    .copyright{
+        padding-left: 5%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .text-case-title {
+        font-size: 35px;
+    }
+
+    .img-div {
+        height: 24%;
+    }
+
+    .text-case {
+        font-size: 16px;
+    }
+
+    .title-password {
+        font-size: 29px;
+    }
+
+    .text-password {
+        font-size: 18px;
+    }
+
+    .btn-password {
+        width: 20%;
+        height: 15%;
+        font-size: 20px;
+    }
+    /*Souza*/
+
+    /*Gustavo*/
+    .footer{
+        width: auto;
+        font-size: 15px;
+        padding-left: 10%;
+    }
+    .box-cinza{
+        width: auto;
+        font-size: 12px;
+        padding-left: 5%;
+    }
+    .letter-digital1{
+        font-size: 19px;
+        padding-top: 6%;
+    }
+    .ciberbullying{
+        padding-bottom: 3%;
+    }
+    .letter2{
+        font-size: 15px;
+    }
 }
 
 @media (min-width: 1400px) {
-    .header {
-        height: 10vh;
+    footer{
+        width: auto;
+    }
+    .stay-up button{
+        width: auto;
+        height: 40px;
+    }
+    .letter-digital1{
+        font-size: 1.3rem;
+        padding-top: 7%;
     }
 
-    .box1-header {
+    .span-text-password2{
+        width: 55%;
+     } 
+     .img-password2{
+        padding-left: 9%;
+     }
+     /*Gustavo*/
+}
+
+@media(min-width: 1500px) {
+    .letter-digital1{
+        font-size: 25px;
+    }
+    
+    .img-password2{
+        padding-left: 15%;
         width: 25%;
     }
 
-    .logotipo {
-        font-size: 30px;
+    .footer{
+        width: auto;
+        padding-left: 25%;
+        padding-bottom: 3%;
     }
 
+    .company {
+        justify-content: center;
+        align-items: center;
+        padding-left: 10%;
+    
+    
+    }
+    
+    .letter-company {
+        font-family: 'Inter', sans-serif;
+        color: #F5F7FA;
+        padding-bottom: auto;
+    }
+    
+    .support {
+        justify-content: center;
+        align-items: center;
+        padding-left: 7.5%
+    }
+    
+    .support h2 {
+        padding-bottom: auto;
+    }
+    
+    .letter-support {
+        font-family: 'Inter', sans-serif;
+        color: #F5F7FA;
+        padding-bottom: 7.5%;
+    }
+    
+    .stay-up{
+        padding-left: 5%;
+    }
+    
+    .stay-up button {
+        font-family: 'Inter', sans-serif;
+        color: var(--text-gray-300, #D9DBE1);
+        background-color: #626b70;
+        width: 200px;
+        height: 50px;
+        border-radius: 5.569px;
+    }
+    
+    .letter-button {
+        align-items: right;
+        justify-content: flex-start;
+        cursor: pointer;
+    }
+    .container-digital {
+
+        width: 75%;
+        height: 10rem;
+        display: flex;
+        margin-bottom: 15%;
+        padding-left: 15%;
+    }
+    
+    .digital1 {
+        margin-left: 30px;
+        width: 30%;
+        height: auto;
+        position: relative;
+        display: flex;
+    }
+    
+    .discord_img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        border-radius: 10px;
+        max-width: 100%;
+    }
+    
+    .discord-text {
+        text-align:center;
+        justify-content:space-between;
+        margin-top: 65%;
+        margin-left: 15% ;
+        width: 70%;
+        height: 70%;
+        position: absolute;
+        background: var(--neutral-silver, #F5F7FA);
+        border-radius: 5.569px;
+        font-family: 'Inter', sans-serif;
+        font-size:  5%;
+    }
+    
+    .letter-digital1 {
+        padding: 5px;
+        font-size: 20px;
+        color: var(--neutral-grey, #717171);
+    }
+    
+    .digital2 {
+        padding-bottom: 5%;
+        margin-left: 20px;
+        width: 30%;
+        height: auto;
+        position: relative;
+        display: flex;
+    
+    }
+    
+    .serasa_img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        border-radius: 10px;
+        max-width: 100%;
+    
+    }
+    
+    .serasa_text {
+        text-align:center;
+        justify-content:space-between;
+        margin-top: 65%;
+        margin-left: 15% ;
+        width: 70%;
+        height: 70%;
+        position: absolute;
+        background: var(--neutral-silver, #F5F7FA);
+        border-radius: 5.569px;
+        font-family: 'Inter', sans-serif;
+        font-size:  5%;
+    }
+    
+    .digital3 {
+        padding-bottom: 5%;
+        margin-left: 20px;
+        width: 30%;
+        height: auto;
+        position: relative;
+        display: flex;
+    }
+    
+    .previdencia-img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        border-radius: 10px;
+        max-width: 100%;
+    
+    }
+    
+    .previdencia-text {
+        text-align:center;
+        justify-content:space-between;
+        margin-top: 65%;
+        margin-left: 15% ;
+        width: 70%;
+        height: 74%;
+        position: absolute;
+        background: var(--neutral-silver, #F5F7FA);
+        border-radius: 5.569px;
+        font-family: 'Inter', sans-serif;
+        font-size:  5%;
+    }
+    /*Victor*/
+    .box-ciberbullying{
+        background: var(--neutral-silver, #F5F7FA);
+        width: 100%;
+        height: 14rem;
+        display: flex;
+    }
+    
+    .ciberbullying{
+        background: var(--neutral-silver, #F5F7FA);
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+
+    }
+    
+    .letter{
+        font-size: 30px;
+        padding-top: 10%;
+        padding-left: 25%;
+        color: var(--neutral-d-grey, #4D4D4D);
+        justify-content: baseline;
+    }
+    
+    .letter1{
+        color: var(--brand-primary, #4CAF4F);
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        padding-left: 25%;
+        font-weight: 700;
+        
+    }
+    
+    .letter2{
+        font-size: 20px;
+        padding-left: 25%;
+        padding-bottom: 5%;
+        color: var(--text-gray-900, #18191F);
+    } 
+    
+    .box-img{
+        padding-left: 30%;
+        width: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .box-img-cont{
+        display: flex;
+        position: relative;
+        padding-top: 5%;
+        width: auto;
+        padding-bottom: 2%;
+    }
+    
+    .img-text{
+        position: absolute;
+        top: 5%;
+        left: 29%;
+        color: white;
+        width: auto;
+        color: var(--neutral-d-grey, #4D4D4D);
+        font-weight: 700;
+        font-size: 120%; 
+    }
+    
+    .img-text2{
+        position: relative;
+        top: 25%;
+        left: 3%;
+        color: white;
+        width: 70%;
+        box-sizing: border-box;
+        color: var(--neutral-grey, #717171);
+        font-weight: 700;
+        font-size: 15px;
+    }
+    
+    .section-password2 {
+        margin-top: 5%;
+        display: flex;
+    }
+    
+    .img-password2 {
+
+        width: 25%;
+        padding-left: 15%;
+        object-fit: cover;
+    }
+    
+    .span-text-password2 {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+        width: 35%;
+    }
+    
+    .title-password2 {
+        font-size: 30px;
+    }
+    
+    .text-password2 {
+        font-size: 15px;
+        flex-direction: column;
+    }
+    
+    .btn-password2 {
+        padding: 10px;
+        width: 110px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: white;
+        background-color: #4CAF4F;
+        border: none;
+        border-radius: 3px;
+    }
+
+}
+
+@media (min-width: 1900px) {
     .box2-list {
+        width: 250px;
+    }
+
+    .box2-btn {
+         width: 180px;
+        font-size: 23px;
+    }
+
+    .img-box2 {
+        width: 18px;
+        object-fit: cover;
+    }
+
+    .list-text {
+        font-size: 20px;
+    }
+
+    .logotipo {
+        font-size: 32px;
+    }
+
+    .analitycs-case-box {
+        width: 18%;
+    }
+    
+    .title-case {
+        font-size: 32px;
+    }
+
+    .text-case {
+        max-width: 80%;
+        font-size: 20px;
+    }
+
+    .section-password {
+        display: flex;
+        justify-content: space-around;
+        padding: 50px;
+        padding-left: 25px;
+    }
+
+    .img-password {
+        width: 30%;
+    }
+
+    .title-password {
+        font-size: 44px;
+    }
+
+    .text-password {
+        font-size: 22px;
+    }
+
+    .btn-password {
+        font-size: 28px;
+    }
+    /*Souza*/
+
+    /*Gustavo*/
+    .letter-digital1{
         font-size: 25px;
     }
 
-    .box2-header {
-        width: 32%;
+    .img-password2{
+        padding-left: 10%;
     }
 
-    .box2-list {
-        width: 255px;
+    .footer{
+        width: auto;
+        padding-left: 25%;
+        padding-bottom: 3%;
     }
-}
 
-@media (min-width: 1800px) {
+    .company {
+        justify-content: center;
+        align-items: center;
+        padding-left: 10%;
+    
+    
+    }
+    
+    .letter-company {
+        font-family: 'Inter', sans-serif;
+        color: #F5F7FA;
+        padding-bottom: auto;
+    }
+    
+    .support {
+        justify-content: center;
+        align-items: center;
+        padding-left: 7.5%
+    }
+    
+    .support h2 {
+        padding-bottom: auto;
+    }
+    
+    .letter-support {
+        font-family: 'Inter', sans-serif;
+        color: #F5F7FA;
+        padding-bottom: 7.5%;
+    }
+    
+    .stay-up{
+        padding-left: 5%;
+    }
+    
+    .stay-up button {
+        font-family: 'Inter', sans-serif;
+        color: var(--text-gray-300, #D9DBE1);
+        background-color: #626b70;
+        width: 200px;
+        height: 50px;
+        border-radius: 5.569px;
+    }
+    
+    .letter-button {
+        align-items: right;
+        justify-content: flex-start;
+        cursor: pointer;
+    }
 
+    .container-digital {
+
+        width: 75%;
+        height: 10rem;
+        display: flex;
+        margin-bottom: 15%;
+        padding-left: 15%;
+    }
+    
+    .digital1 {
+        margin-left: 30px;
+        width: 30%;
+        height: auto;
+        position: relative;
+        display: flex;
+    }
+    
+    .discord_img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        border-radius: 10px;
+        max-width: 100%;
+    }
+    
+    .discord-text {
+        text-align:center;
+        justify-content:space-between;
+        margin-top: 65%;
+        margin-left: 15% ;
+        width: 70%;
+        height: 70%;
+        position: absolute;
+        background: var(--neutral-silver, #F5F7FA);
+        border-radius: 5.569px;
+        font-family: 'Inter', sans-serif;
+        font-size:  5%;
+    }
+    
+    .letter-digital1 {
+        padding: 5px;
+        font-size: 23px;
+        color: var(--neutral-grey, #717171);
+    }
+    
+    .digital2 {
+        padding-bottom: 5%;
+        margin-left: 20px;
+        width: 30%;
+        height: auto;
+        position: relative;
+        display: flex;   
+    }
+    
+    .serasa_img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        border-radius: 10px;
+        max-width: 100%;   
+    }
+    
+    .serasa_text {
+        text-align:center;
+        justify-content:space-between;
+        margin-top: 65%;
+        margin-left: 15% ;
+        width: 70%;
+        height: 70%;
+        position: absolute;
+        background: var(--neutral-silver, #F5F7FA);
+        border-radius: 5.569px;
+        font-family: 'Inter', sans-serif;
+        font-size:  5%;
+    }  
+    
+    .digital3 {
+        padding-bottom: 5%;
+        margin-left: 20px;
+        width: 30%;
+        height: auto;
+        position: relative;
+        display: flex;
+    }
+    
+    .previdencia-img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        border-radius: 10px;
+        max-width: 100%; 
+    }
+    
+    .previdencia-text {
+        text-align:center;
+        justify-content:space-between;
+        margin-top: 65%;
+        margin-left: 15% ;
+        width: 70%;
+        height: 74%;
+        position: absolute;
+        background: var(--neutral-silver, #F5F7FA);
+        border-radius: 5.569px;
+        font-family: 'Inter', sans-serif;
+        font-size:  5%;
+    }
 }
