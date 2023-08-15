@@ -67,7 +67,7 @@ a {
     padding: 0;
     display: flex;
     justify-content: space-between;
-    width: 170px;
+    width: 115px;
     margin-right: 20px;
 }
 
@@ -246,9 +246,9 @@ a {
 }
 
 .footer {
-    width: 100%;
+    width: auto;
     display: flex;
-    padding-left: 14%;
+    padding-left: 6%;
     padding-bottom: 5%;
     padding-top: 5%;
     background: var(--neutral-black, #263238);
@@ -265,17 +265,17 @@ a {
 
 .instagram {
     width: 25px;
-    padding-right: 10%;
+    padding-right: 5%;
 }
 
 .twitter {
     width: 25px;
-    padding-right: 8%;
+    padding-right: 5%;
 }
 
 .youtube {
     width: 25px;
-    padding-right: 8%;
+    padding-right: 5%;
 }
 
 .div_icons {
@@ -288,7 +288,7 @@ a {
 .company {
     justify-content: center;
     align-items: center;
-    padding-left: 15%;
+    padding-left: 7%;
 
 
 }
@@ -306,7 +306,7 @@ a {
 .support {
     justify-content: center;
     align-items: center;
-    padding-left: 15%
+    padding-left: 7%
 }
 
 .support h2 {
@@ -327,7 +327,7 @@ a {
     font-family: 'Inter', sans-serif;
     color: var(--text-gray-300, #D9DBE1);
     background-color: #626b70;
-    width: 100px;
+    width: auto;
     height: auto;
     border-radius: 5.569px;
 }
@@ -339,11 +339,11 @@ a {
 }
 
 .container-digital {
-
-    width: 100%;
+    width: auto;
     height: 15rem;
     display: flex;
     margin-bottom: 17%;
+    justify-content: center;
 }
 
 .digital1 {
@@ -572,6 +572,46 @@ a {
     border-radius: 3px;
 }
 /*Fim Victor*/
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+  }
+
+  /* Estilize a imagem do botão */
+  .whatsapp-float img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .box {
+    height: 2000px;
+  }
+
+  .circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #4CAF; /* Cor de fundo do círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: floatAnimation 2s ease-in-out infinite;
+  }
+
+  @keyframes floatAnimation {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
 
 /* RESPONSIVIDADE */
 

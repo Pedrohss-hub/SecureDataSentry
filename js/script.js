@@ -29,7 +29,18 @@ document.addEventListener("scroll", () => {
 
 const spacePag = () => {
     carrossel.style.marginTop = Math.abs(headerHeight) +'px'
-    console.log(carrossel.marginTop)
 }
 
 spacePag()
+
+function scrollToNoticias() {
+    const noticiasSection = document.querySelector('.list-text');
+    const news = document.querySelector('.container-digital')
+    if (noticiasSection) {
+        const noticiasOffsetTop = news.getBoundingClientRect().top + window.scrollY;
+        window.scrollTo({ top: noticiasOffsetTop, behavior: "smooth" });
+    }
+    console.log(noticiasSection)
+}
+
+
