@@ -29,8 +29,8 @@ document.addEventListener("scroll", () => {
 
 const spacePag = () => {
     carrossel.style.marginTop = Math.abs(headerHeight) +'px'
+    console.log(carrossel.marginTop)
 }
-
 spacePag()
 
 function scrollToNoticias() {
@@ -40,7 +40,5 @@ function scrollToNoticias() {
         const noticiasOffsetTop = news.getBoundingClientRect().top + window.scrollY;
         window.scrollTo({ top: noticiasOffsetTop, behavior: "smooth" });
     }
-    console.log(noticiasSection)
 }
-
 

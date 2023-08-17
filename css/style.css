@@ -21,7 +21,7 @@
 
 a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .header {
@@ -33,6 +33,7 @@ a {
     justify-content: space-between;
     align-items: center;
     background-color: white;
+    z-index: 5;
 }
 
 .box1-header {
@@ -67,7 +68,7 @@ a {
     padding: 0;
     display: flex;
     justify-content: space-between;
-    width: 115px;
+    width: 110px;
     margin-right: 20px;
 }
 
@@ -75,6 +76,7 @@ a {
     font-size: 15px;
     font-weight: 500;
     color: #4D4D4D;
+    cursor: pointer;
 }
 
 .box2-btn {
@@ -128,6 +130,7 @@ a {
     align-items: center;
     width: 22%;
     padding: 20px;
+    padding-bottom: 35px;
     padding-top: 10px;
     box-shadow: 0px 1px 2px -1px;
     border-radius: 6px;
@@ -161,7 +164,6 @@ a {
     margin-top: 5%;
     display: flex;
     padding: 20px;
-    padding-left: 0;
 }
 
 .img-password {
@@ -202,6 +204,34 @@ a {
     cursor: pointer;
 }
 
+.container-news {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box-news {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-news {
+    width: 70%;
+}
+
+.text-news {
+    bottom: 0;
+    height: auto;
+    max-width: 60%;
+    text-align: center;
+    background-color: #F5F7FA;
+    padding: 10px;
+    border-radius: 10px;
+}
 /* ANIMAÇÕES*/
 @keyframes headerUp {
     0% {
@@ -246,10 +276,10 @@ a {
 }
 
 .footer {
-    width: auto;
+    width: 100%;
     display: flex;
-    padding-left: 6%;
-    padding-bottom: 5%;
+    justify-content: space-around;
+    padding-bottom: 20px;
     padding-top: 5%;
     background: var(--neutral-black, #263238);
     color: #FFFFFF;
@@ -265,17 +295,17 @@ a {
 
 .instagram {
     width: 25px;
-    padding-right: 5%;
+    padding-right: 10%;
 }
 
 .twitter {
     width: 25px;
-    padding-right: 5%;
+    padding-right: 8%;
 }
 
 .youtube {
     width: 25px;
-    padding-right: 5%;
+    padding-right: 8%;
 }
 
 .div_icons {
@@ -288,9 +318,6 @@ a {
 .company {
     justify-content: center;
     align-items: center;
-    padding-left: 7%;
-
-
 }
 
 .company h2 {
@@ -306,7 +333,6 @@ a {
 .support {
     justify-content: center;
     align-items: center;
-    padding-left: 7%
 }
 
 .support h2 {
@@ -319,15 +345,11 @@ a {
     padding-bottom: 7.5%;
 }
 
-.stay-up{
-    padding-left: 5%;
-}
-
 .stay-up button {
     font-family: 'Inter', sans-serif;
     color: var(--text-gray-300, #D9DBE1);
     background-color: #626b70;
-    width: auto;
+    width: 100px;
     height: auto;
     border-radius: 5.569px;
 }
@@ -339,11 +361,13 @@ a {
 }
 
 .container-digital {
-    width: auto;
+    margin: auto;
+    margin-top: 4%;
+    width: 100%;
     height: 15rem;
     display: flex;
+    justify-content: space-around;
     margin-bottom: 17%;
-    justify-content: center;
 }
 
 .digital1 {
@@ -456,9 +480,10 @@ a {
 /*Victor*/
 .box-ciberbullying{
     background: var(--neutral-silver, #F5F7FA);
-    width: auto;
+    width: 100%;
     height: auto;
     display: flex;
+    justify-content: space-around;
 }
 
 .ciberbullying{
@@ -471,7 +496,6 @@ a {
 .letter{
     font-size: auto;
     padding-top: 10%;
-    padding-left: 75px;
     color: var(--neutral-d-grey, #4D4D4D);
     justify-content: baseline;
 }
@@ -481,13 +505,10 @@ a {
     font-size: auto;
     display: flex;
     align-items: center;
-    padding-left: 75px;
-    font-weight: 700;
-    
+    font-weight: 700;   
 }
 
 .letter2{
-    padding-left: 75px;
     padding-bottom: 2%;
     color: var(--text-gray-900, #18191F);
 }
@@ -495,7 +516,6 @@ a {
 
 
 .box-img{
-    padding-left: 20%;
     width: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -664,16 +684,8 @@ a {
     }
     /*Souza*/
 
-    /*Gustavo*/
     .letter-digital1{
         font-size: 18px ;
-    }
-    .footer{
-        width: auto;
-        padding-left: 5%;
-    }
-    .copyright{
-        padding-left: 5%;
     }
 }
 
@@ -707,14 +719,11 @@ a {
 
     /*Gustavo*/
     .footer{
-        width: auto;
         font-size: 15px;
-        padding-left: 10%;
     }
     .box-cinza{
         width: auto;
         font-size: 12px;
-        padding-left: 5%;
     }
     .letter-digital1{
         font-size: 19px;
@@ -729,9 +738,6 @@ a {
 }
 
 @media (min-width: 1400px) {
-    footer{
-        width: auto;
-    }
     .stay-up button{
         width: auto;
         height: 40px;
@@ -744,34 +750,26 @@ a {
     .span-text-password2{
         width: 55%;
      } 
-     .img-password2{
-        padding-left: 9%;
-     }
      /*Gustavo*/
 }
 
 @media(min-width: 1500px) {
+    
     .letter-digital1{
         font-size: 25px;
     }
     
     .img-password2{
-        padding-left: 15%;
         width: 25%;
     }
 
     .footer{
-        width: auto;
-        padding-left: 25%;
         padding-bottom: 3%;
     }
 
     .company {
         justify-content: center;
-        align-items: center;
-        padding-left: 10%;
-    
-    
+        align-items: center;    
     }
     
     .letter-company {
@@ -783,7 +781,6 @@ a {
     .support {
         justify-content: center;
         align-items: center;
-        padding-left: 7.5%
     }
     
     .support h2 {
@@ -794,10 +791,6 @@ a {
         font-family: 'Inter', sans-serif;
         color: #F5F7FA;
         padding-bottom: 7.5%;
-    }
-    
-    .stay-up{
-        padding-left: 5%;
     }
     
     .stay-up button {
@@ -815,12 +808,11 @@ a {
         cursor: pointer;
     }
     .container-digital {
-
         width: 75%;
         height: 10rem;
         display: flex;
+        justify-content: space-around;
         margin-bottom: 15%;
-        padding-left: 15%;
     }
     
     .digital1 {
@@ -942,7 +934,6 @@ a {
     .letter{
         font-size: 30px;
         padding-top: 10%;
-        padding-left: 25%;
         color: var(--neutral-d-grey, #4D4D4D);
         justify-content: baseline;
     }
@@ -952,20 +943,17 @@ a {
         font-size: 30px;
         display: flex;
         align-items: center;
-        padding-left: 25%;
         font-weight: 700;
         
     }
     
     .letter2{
         font-size: 20px;
-        padding-left: 25%;
         padding-bottom: 5%;
         color: var(--text-gray-900, #18191F);
     } 
     
     .box-img{
-        padding-left: 30%;
         width: auto;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -1008,9 +996,7 @@ a {
     }
     
     .img-password2 {
-
         width: 25%;
-        padding-left: 15%;
         object-fit: cover;
     }
     
@@ -1042,11 +1028,11 @@ a {
         border-radius: 3px;
     }
 
-}
+} 
 
-@media (min-width: 1900px) {
+ @media (min-width: 1900px) {
     .box2-list {
-        width: 250px;
+        width: 150px;
     }
 
     .box2-btn {
@@ -1070,15 +1056,15 @@ a {
     .analitycs-case-box {
         width: 18%;
     }
-    
+   
     .title-case {
         font-size: 32px;
     }
 
     .text-case {
-        max-width: 80%;
         font-size: 20px;
     }
+
 
     .section-password {
         display: flex;
@@ -1102,9 +1088,10 @@ a {
     .btn-password {
         font-size: 28px;
     }
-    /*Souza*/
 
-    /*Gustavo*/
+    
+
+
     .letter-digital1{
         font-size: 25px;
     }
@@ -1114,8 +1101,6 @@ a {
     }
 
     .footer{
-        width: auto;
-        padding-left: 25%;
         padding-bottom: 3%;
     }
 
@@ -1140,7 +1125,12 @@ a {
     }
     
     .support h2 {
-        padding-bottom: auto;
+        font-family: 'Inter', sans-serif;
+        color: var(--text-gray-300, #D9DBE1);
+        background-color: #626b70;
+        width: auto;
+        height: auto;
+        border-radius: 5.569px;
     }
     
     .letter-support {
@@ -1169,12 +1159,11 @@ a {
     }
 
     .container-digital {
-
+        margin: auto;
         width: 75%;
         height: 10rem;
         display: flex;
         margin-bottom: 15%;
-        padding-left: 15%;
     }
     
     .digital1 {
@@ -1274,4 +1263,5 @@ a {
         font-family: 'Inter', sans-serif;
         font-size:  5%;
     }
-}
+
+} 
