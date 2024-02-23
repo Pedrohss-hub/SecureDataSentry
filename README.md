@@ -1,1 +1,1 @@
-Linke to site: https://pedrohss-hub.github.io/SecureDataSentry/
+Link to site: https://pedrohss-hub.github.io/SecureDataSentry/
